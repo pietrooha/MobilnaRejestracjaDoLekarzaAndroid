@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- EditText do wpisywania dnia wizyty -->
+    <EditText android:id="@+id/dzienWizyty"
+        android:hint="Wybierz dzień wizyty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:inputType="date"
+        android:layout_weight="1"/>
+
+    <!-- EditText do wpisywania godziny wizyty -->
+    <EditText android:id="@+id/godzinaWizyty"
+        android:hint="Wpisz godzinę wizyty (hh:mm)"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_weight="1"/>
+
+    <!-- ALE WKRÓTCE ... -->
+
+    <!-- ... Spinner do wybierania godziny wizyty -->
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/godzina_spinner"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" />
+
+    <!-- Pole do wpisywania imienia -->
+    <EditText android:id="@+id/imie"
+        android:hint="Imię"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLength="30"
+        android:inputType="text"
+        android:layout_weight="1"/>
+
+    <!-- EditText do wpisywania nazwiska -->
+    <EditText android:id="@+id/nazwisko"
+        android:hint="Nazwisko"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLength="40"
+        android:inputType="text"
+        android:layout_weight="1"/>
+
+    <!-- EditText do wpisywania numeru PESEL -->
+    <EditText android:id="@+id/pesel"
+        android:hint="PESEL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:digits="0123456789"
+        android:maxLength="11"
+        android:inputType="number"
+        android:layout_weight="1"/>
+
+    <!-- Pole do wpisywania numeru telefonu -->
+    <EditText android:id="@+id/nrTel"
+        android:hint="Numer telefonu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:digits="0123456789"
+        android:maxLength="9"
+        android:inputType="number"
+        android:layout_weight="1"/>
+
+    <!-- Button do zarejestrowania wizyty -->
+    <Button android:id="@+id/btnZarejestrujWizyte"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Zarejestruj wizytę"
+        android:layout_weight="1"/>
+
+</LinearLayout>

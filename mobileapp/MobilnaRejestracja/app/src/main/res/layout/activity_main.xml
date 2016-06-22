@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!--  Button do sprawdzenia wolnych terminow -->
+    <Button android:id="@+id/btnWyswietlWolneTerminy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Wyświetl wolne terminy"
+        android:layout_marginTop="25dip"/>
+
+    <!--  Button do rejestracji nowej wizyty -->
+    <Button android:id="@+id/btnPrzejdzDoRejestracji"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Przejdź do rejestracji"
+        android:layout_marginTop="25dip"/>
+
+</LinearLayout>
